@@ -24,9 +24,7 @@ function Header() {
           </p>
         </div>
         <div className="abouts-img">
-          <div>
-            <section></section>
-          </div>
+          <img src={require("../../public/poster.png")} alt="about" />
         </div>
       </section>
     </div>

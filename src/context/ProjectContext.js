@@ -1,8 +1,9 @@
 import React, {createContext} from 'react'
-import schoolapp from '../public/School.PNG'
-import Movie from '../public/movie.PNG'
-import Portfolio from '../public/Portfolio.PNG'
-import ecommerce from '../public/ecommerce.PNG'
+import schoolapp from '../public/schoolNew.png'
+import Food from "../public/food.png"
+import Movie from '../public/movieNew.png'
+import Portfolio from '../public/portfolioNew.png'
+import ecommerce from '../public/econ.png'
 
 const ProjectContext = createContext()
 export function ProjectProvider({children}) {
@@ -11,6 +12,11 @@ export function ProjectProvider({children}) {
         name:"School managment application",
         description: "",
         img: schoolapp
+    },
+    {
+        name:"Food delivery application",
+        description: "",
+        img: Food
     },
     {
         name:"Movie browsing platform",

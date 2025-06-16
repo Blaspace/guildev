@@ -4,7 +4,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 function About() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="about-con">
       <div className="about">
@@ -21,11 +21,13 @@ function About() {
           <h1>The core mission behind all our work</h1>
           <br />
           <p>
-            At GUILDEV, we're passionate about leveraging the power of the web
-            to help businesses thrive in the digital age. With a team of skilled
-            developers, designers, and consultants, we specialize in crafting
-            innovative solutions tailored to meet the unique needs of each
-            client.
+            At GUILDEV, we’re not just a web agency — we’re your digital
+            partners. We’re passionate about using the power of the web to help
+            businesses grow, connect, and shine online. With a friendly team of
+            developers, designers, and tech consultants, we build smart, modern
+            solutions that are custom-tailored to your goals — no copy-paste
+            templates here. Whether you’re starting from scratch or leveling up,
+            we’re here to make the process easy, exciting, and impactful.
           </p>
           <section>
             <div>
@@ -42,7 +44,9 @@ function About() {
             </div>
           </section>
           <br />
-          <a href={'/about'} style={{textDecoration:'none', color:"black"}}><button className="btn" >Learn More</button></a>
+          <a href={"/about"} style={{ textDecoration: "none", color: "black" }}>
+            <button className="btn">Learn More</button>
+          </a>
         </div>
       </div>
     </div>

@@ -2,9 +2,10 @@
 
 import React from "react";
 import { TfiLightBulb } from "react-icons/tfi";
-import { VscSettings } from "react-icons/vsc";
-import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
-import { IoReloadCircleOutline } from "react-icons/io5";
+import { RiCodeView } from "react-icons/ri";
+import { IoRocketOutline } from "react-icons/io5";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { CiCalendarDate } from "react-icons/ci";
 
 function Process() {
   return (
@@ -20,53 +21,65 @@ function Process() {
         <div>
           <section>
             <span>
-              <TfiLightBulb size={20} />
+              <CiCalendarDate size={30} />
             </span>
             <p>
-              <b>Problem Identification</b>
+              <b>Discovery Call</b>
             </p>
           </section>
-          <p>Identify and define the problem or opportunity for improvement.</p>
-        </div>
-        <div>
-          <section>
-            <span>
-              <IoReloadCircleOutline size={20} />
-            </span>
-            <p>
-              <b>Analyzing Solutions</b>
-            </p>
-          </section>
+          <br />
           <p>
-            Research and evaluate potential solutions to the identified problem.
+            We start with a friendly chat to understand your business, goals,
+            and ideas. This helps us know where you are and where you want to
+            go.
           </p>
         </div>
         <div>
           <section>
             <span>
-              <VscSettings size={20} />
+              < IoIosCheckmarkCircleOutline size={30} />
             </span>
             <p>
-              <b>Design and Development</b>
+              <b>Client Onboarding</b>
             </p>
           </section>
+          <br />
           <p>
-            Create a detailed design and develop a solution based on the chosen
-            approach.
+            Once we’re a good fit, we send over a simple onboarding form,
+            contract, and project timeline. You’ll get a clear roadmap of what
+            to expect.
           </p>
         </div>
         <div>
           <section>
             <span>
-              <IoCheckmarkDoneCircleOutline size={30} />
+              <RiCodeView size={30} />
             </span>
             <p>
-              <b>Implementation and Testing</b>
+              <b>Research & Development</b>
             </p>
           </section>
+          <br />
           <p>
-            Implement the solution and test it to ensure it meets the required
-            standards and resolves the initial problem.
+            We dive into your industry, explore what your competitors are doing,
+            and start crafting a design and development plan that suits your
+            brand.
+          </p>
+        </div>
+        <div>
+          <section>
+            <span>
+              <IoRocketOutline size={30} />
+            </span>
+            <p>
+              <b>Launch & Support</b>
+            </p>
+          </section>
+          <br />
+          <p>
+            We go live with your site or app — fully optimized, responsive, and
+            fast. After launch, we stick around to make sure everything runs
+            smoothly and you feel confident moving forward.
           </p>
         </div>
       </div>

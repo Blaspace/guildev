@@ -20,7 +20,7 @@ function ContactForm() {
                 <p>
                   <b>Our Email:</b>
                   <br />
-                  ngbedejames415@gmail.com
+                  info@guilders.com
                 </p>
               </label>
             </li>
@@ -32,7 +32,7 @@ function ContactForm() {
                   {" "}
                   <b>Our Phone Number:</b>
                   <br />
-                  08166533430
+                  +234 816 653 3430
                 </p>
               </label>
             </li>

@@ -16,10 +16,9 @@ function About() {
       <Nav color={"#000000"} />
       <Header />
       <Services />
-      <Mission/>
-      <OurTeam/>
-      <CallToAction/>
-      <Footer/>
+      <Mission />
+      <CallToAction />
+      <Footer />
     </div>
   );
 }

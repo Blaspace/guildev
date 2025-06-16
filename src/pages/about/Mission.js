@@ -2,8 +2,8 @@
 
 import React from "react";
 import { IoCheckmarkCircle } from "react-icons/io5";
-import img1 from "../../public/Rectangle 32.png";
-import img2 from "../../public/Rectangle 34.png";
+import img1 from "../../public/image (1).jpg";
+import img2 from "../../public/image (3).jpg";
 
 function Mission() {
   return (
@@ -35,18 +35,20 @@ function Mission() {
                 trends by leveraging the latest tools, frameworks, and best
                 practices in Full-Stack development.
               </li>
-              
             </ul>
             <ul>
-            <li>
+              <li>
                 <IoCheckmarkCircle color="#64ccc5" size={50} /> Building lasting
                 relationships by providing reliable support, seamless
                 communication, and agile project management.
               </li>
               <li>
-                <IoCheckmarkCircle color="#64ccc5" size={50} /> Turning ideas
-                into practical digital solutions that enhance operational
-                efficiency, customer engagement, and brand value.
+                <IoCheckmarkCircle color="#64ccc5" size={50} />
+                <span>
+                  {" "}
+                  Turning ideas into practical digital solutions that enhance
+                  operational efficiency, customer engagement, and brand value.
+                </span>
               </li>
             </ul>
           </section>

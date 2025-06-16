@@ -173,18 +173,19 @@
   border-radius: 15px;
 }
 .about-img div {
-  background-image: url("../../public/Rectangle\ 25.png");
+  background-image: url("../../public/image\ \(3\).jpg");
   width: 100%;
   height: 100%;
   position: relative;
   background-repeat: no-repeat;
+  opacity: 0.8;
   background-size: cover;
   border-radius: 15px;
   top: 20px;
   left: 20px;
 }
 .about-img section {
-  background-image: url("../../public/Rectangle\ 26.png");
+  background-image: url("../../public/image\ \(1\).jpg");
   width: 100%;
   height: 100%;
   position: absolute;

@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import logo from "../public/logo.png";
+import logo from "../public/guiderslogo.png";
 
 function Footer() {
   return (
@@ -10,7 +10,7 @@ function Footer() {
         <div className="footer-top">
           <div>
             <h3>
-              <img src={logo} /> GUILDEV
+              <img src={logo} width={"80px"} /> GUILDEV
             </h3>
             <br />
             <p>
@@ -38,10 +38,27 @@ function Footer() {
               <b>Quick Link</b>
             </p>
             <br />
-            <a href={'/'} style={{textDecoration:'none', color:"#ffffff"}}><li>Home</li></a>
-            <a href={'/about'} style={{textDecoration:'none', color:"#ffffff"}}><li>About</li></a>
-            <a href={'/contact'} style={{textDecoration:'none', color:"#ffffff"}}><li>Contact</li></a>
-            <a href={'/projects'} style={{textDecoration:'none', color:"#ffffff"}}><li>Portfolio</li></a>
+            <a href={"/"} style={{ textDecoration: "none", color: "#ffffff" }}>
+              <li>Home</li>
+            </a>
+            <a
+              href={"/about"}
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              <li>About</li>
+            </a>
+            <a
+              href={"/contact"}
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              <li>Contact</li>
+            </a>
+            <a
+              href={"/projects"}
+              style={{ textDecoration: "none", color: "#ffffff" }}
+            >
+              <li>Portfolio</li>
+            </a>
           </ul>
           <div>
             <ul>
