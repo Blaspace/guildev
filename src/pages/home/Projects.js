@@ -53,6 +53,13 @@ function Projects() {
 
           {project.slice(2, 4).map((value, i) => {
             return (
+<a
+                href={value.url}
+                target="_blank"
+                style={{ textDecoration: "none", color: "#000" }}
+                data-aos="fade-up"
+                data-aos-duration={i + 1000}
+              >
               <section
                 key={i}
                 data-aos="fade-up"
@@ -63,6 +70,7 @@ function Projects() {
                   <b>{value.name}</b>
                 </p>
               </section>
+</a>
             );
           })}
         </div>
