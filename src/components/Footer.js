@@ -2,6 +2,8 @@
 
 import React from "react";
 import logo from "../public/guiderslogo.png";
+import { MdEmail, MdPhonelinkRing } from "react-icons/md";
+import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io";
 
 function Footer() {
   return (
@@ -10,11 +12,11 @@ function Footer() {
         <div className="footer-top">
           <div>
             <h3>
-              <img src={logo} width={"80px"} /> GUILDEV
+              <img src={logo} width={"80px"} /> GUILDERS
             </h3>
             <br />
             <p>
-              At Guildev, we are passionate about transforming businesses
+              At Guilders, we are passionate about transforming businesses
               through innovative web solutions. As a Full-Stack web development
               agency, we specialize in building end-to-end digital platforms
               that are visually stunning, functionally robust, and scalable for
@@ -82,8 +84,29 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="footer-buttom"></div>
+        <div className="footer-buttom">
+          <div className="socials">
+            <a href="https://instagram.com/guilderstechnology" target="_blank">
+              <IoLogoInstagram size={30} color="#ffffff" />
+            </a>
+            <a href="https://wa.me/2348166533430" target="_blank">
+              <IoLogoWhatsapp size={30} color="#ffffff" />
+            </a>
+          </div>
+        </div>
       </div>
+      <img
+        src={require("../public/Rectangle 40.png")}
+        style={{
+          height: "100%",
+          width: "100%",
+          position: "absolute",
+          left: 0,
+          top: 0,
+          zIndex: 5,
+          objectFit: "cover",
+        }}
+      />
     </footer>
   );
 }

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
 }
 .contact{
@@ -57,12 +57,27 @@
     align-items: center;
     gap: 5px;
 }
-.contact li span{
-    background-color: #000000;
+.contact  span{
+    background-color: #0c0c0c;
     height: 40px;
     width: 40px;
     display: block;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.socials span{
+    cursor: pointer;
+}
+.socials span:hover{
+    color: #64ccc5;
+    transform: scale(px);
 }
 .map-con{
     display: flex;

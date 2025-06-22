@@ -19,8 +19,9 @@ function Mission() {
           </h1>
           <br />
           <p>
-            At Guildev, our mission is to empower businesses with dynamic web
-            solutions that inspire growth and innovation. We are committed to
+            At Guilders technology, our mission is to empower businesses with
+            dynamic web solutions that inspire growth and innovation. We are
+            committed to
           </p>
           <br />
           <section>
@@ -57,10 +58,16 @@ function Mission() {
           <section>
             <div>
               <div style={{ position: "relative" }}>
-                <img src={img1} alt="just image" width={"100%"} />
+                <img
+                  src={img1}
+                  alt="just image"
+                  width={"100%"}
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                />
               </div>
               <div className="mission-num">
-                <span
+                {/*<span
                   style={{ borderRight: "1px solid #f4f4f4", height: "100px" }}
                 >
                   <h2>10k</h2>
@@ -73,7 +80,7 @@ function Mission() {
                   <br />
                   <h2>95+</h2>
                   <small>elements must have an alt prop, either</small>
-                </span>
+                </span>*/}
               </div>
             </div>
             <div>
@@ -84,17 +91,29 @@ function Mission() {
               <br />
               <br />
               <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <img src={img2} alt="just image" width={"100%"} />
+              <img
+                src={img2}
+                alt="just image"
+                width={"100%"}
+                data-aos="fade-up"
+                data-aos-duration="800"
+              />
             </div>
           </section>
         </div>
       </div>
+      <img
+        src={require("../../public/Rectangle 40.png")}
+        style={{
+          height: "100%",
+          width: "100%",
+          position: "absolute",
+          left: 0,
+          top: 0,
+          zIndex: 5,
+          objectFit: "cover",
+        }}
+      />
     </div>
   );
 }

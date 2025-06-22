@@ -9,7 +9,6 @@
   width: 100%;
   position: relative;
   background-color: #0c0c0c;
-  background-image: url(../../../ui/Rectangle\ 40.png);
   background-blend-mode: multiply;
 }
 .header-con {
@@ -21,6 +20,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.header-backdrop {
+  height: 350px;
+  width: 350px;
+  background: #64ccc5;
+  border-radius: 50%;
 }
 .header-head {
   display: flex;
@@ -41,6 +46,7 @@
   height: 80%;
   display: flex;
   flex-direction: column;
+  z-index: 5.5;
 }
 .header-text p {
   font-size: 16px;
@@ -140,7 +146,7 @@
   border-radius: 50%;
   background-color: #0c0c0c;
   box-shadow: 5px 2px 25px #b6b6b6;
-  color:#ffffff;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,6 +161,7 @@
   padding-bottom: 80px;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .about {
   display: flex;
@@ -162,6 +169,7 @@
   gap: 20px;
   width: 90%;
   max-width: 1200px;
+  z-index: 7;
 }
 .about-img {
   background-image: url("../../public/Rectangle\ 24.png");
@@ -206,11 +214,11 @@
 .about-text h1 {
   font-size: 40px;
 }
-.about-text section{
+.about-text section {
   display: flex;
   gap: 20px;
 }
-.about-text section h1{
+.about-text section h1 {
   color: #64ccc5;
   font-size: 40px;
   margin-top: 20px;
@@ -221,7 +229,7 @@
 }
 
 /*process*/
-.process-con{
+.process-con {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -229,15 +237,15 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.process-con h2{
+.process-con h2 {
   color: #64ccc5;
   font-size: 30px;
 }
-.process-con h1{
+.process-con h1 {
   font-size: 35px;
   text-align: center;
 }
-.process{
+.process {
   width: 90%;
   max-width: 1200px;
   display: flex;
@@ -246,18 +254,18 @@
   align-items: center;
   gap: 20px;
 }
-.process div{
+.process div {
   width: 100%;
   padding: 15px;
   border: 1px solid #f4f4f4;
   border-radius: 10px;
 }
-.process section{
+.process section {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.process span{
+.process span {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -268,45 +276,43 @@
   color: #ffffff;
 }
 
-
-.project-con{
+.project-con {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.project-con h1{
+.project-con h1 {
   font-size: 40px;
 }
-.project{
+.project {
   width: 90%;
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 30px;
   flex-direction: column-reverse;
 }
-.project div{
+.project div {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.project img{
+.project img {
   width: 100%;
   border-radius: 15px;
 }
 @media (min-width: 780px) {
-  .header{
+  .header {
     height: 100vh;
   }
-  .header-head{
+  .header-head {
     flex-direction: row;
-  justify-content: space-between;
-
+    justify-content: space-between;
   }
-  .header-text{
+  .header-text {
     width: 45%;
   }
   .header-text h1 {
@@ -340,48 +346,47 @@
     width: 90%;
     border-radius: 50%;
   }
-  .services-con h1{
+  .services-con h1 {
     font-size: 35px;
   }
-  .services{
+  .services {
     flex-direction: row;
   }
-  .services div{
+  .services div {
     width: 30%;
   }
 
-  .about{
+  .about {
     flex-direction: row;
     gap: 100px;
   }
-  .about-text{
+  .about-text {
     width: 40%;
   }
-  .about-img{
+  .about-img {
     width: 45%;
     height: 500px;
   }
-  .about-text h1{
+  .about-text h1 {
     font-size: 55px;
   }
 
-  .project{
+  .project {
     flex-direction: row;
   }
 
-  .project div{
+  .project div {
     gap: 50px;
     width: 45%;
   }
 
-
-  .process-con h1{
-  font-size: 40px;
+  .process-con h1 {
+    font-size: 40px;
   }
-  .process{
+  .process {
     flex-direction: row;
   }
-  .process div{
+  .process div {
     width: 22%;
   }
 }

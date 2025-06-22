@@ -19,7 +19,7 @@ function Services() {
   ];
   return (
     <div className="about-service-con">
-      <h1>What Makes Us Different</h1>
+      <h1>What Makes Us<br/> Different</h1>
       <br />
       <br />
       <div className="about-service">

@@ -11,27 +11,33 @@ export function ProjectProvider({children}) {
         {
         name:"School managment application",
         description: "",
-        img: schoolapp
+        img: schoolapp,
+        url: "https://school-manager-o95d.onrender.com/"
+    },
+    
+    {
+        name:"Movie browsing platform",
+        description: "",
+        img: Movie,
+        url: "https://movie-nzm2.onrender.com/"
     },
     {
         name:"Food delivery application",
         description: "",
-        img: Food
-    },
-    {
-        name:"Movie browsing platform",
-        description: "",
-        img: Movie
+        img: Food,
+        url: "https://restaurant-aosa.onrender.com/"
     },
      {
         name:"Portfolio website",
         description: "",
-        img: Portfolio
+        img: Portfolio,
+        url: "https://jamesdev.com.ng"
     }, 
     {
         name:"E-commerce platform",
         description: "",
-        img: ecommerce
+        img: ecommerce,
+        url: "https://shopsmart-razv.onrender.com/"
     },
     ]
   return (

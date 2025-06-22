@@ -12,10 +12,16 @@ function AllProject() {
           {project.map((value, i) => {
             return (
               <section key={i}>
-                <img src={value.img} alt="project" />
-                <p>
-                  <b>{value.name}</b>
-                </p>
+                <a
+                  href={value.url}
+                  style={{ textDecoration: "none", color: "#000" }}
+                  target="_blank"
+                >
+                  <img src={value.img} alt="project" />
+                  <p>
+                    <b>{value.name}</b>
+                  </p>
+                </a>
               </section>
             );
           })}

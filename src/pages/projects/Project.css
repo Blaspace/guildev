@@ -16,7 +16,7 @@
     background-color: #0c0c0c;
     color: #ffffff;
     border-radius: 15px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -34,13 +34,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
   }
   .projects div{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 50px;
   }
   .projects section{
     width: 100%;
@@ -55,6 +56,9 @@
 
   @media (min-width: 780px) {
     .projects section{
-      width: 45%;
+      width: 30%;
+    }
+    .project-header div{
+      font-size: 25px;
     }
   }

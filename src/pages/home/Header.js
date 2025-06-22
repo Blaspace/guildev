@@ -28,14 +28,9 @@ function Header() {
             maxWidth: "1050px",
           }}
         >
-          <div></div>
+          <div className="header-text"></div>
           <span
-            style={{
-              height: "350px",
-              width: "350px",
-              background: "#f4f4f4",
-              borderRadius: "50%",
-            }}
+          className="header-backdrop"
             data-aos="zoom-out"
             data-aos-duration="2000"
           ></span>
@@ -43,6 +38,18 @@ function Header() {
       </div>
       <div className="header-con">
         <Nav color={"#ffffff"} />
+        <img
+          src={require("../../public/Rectangle 40.png")}
+          style={{
+            height: "100%",
+            width: "100%",
+            position: "absolute",
+            left: 0,
+            top: 0,
+            zIndex: 5,
+            objectFit: "cover",
+          }}
+        />
         <div className="header-head">
           <div className="header-text">
             <h1>
@@ -54,13 +61,13 @@ function Header() {
             <br />
             <br />
             <p>
-              Guildev leverages modern frameworks and industry best practices to
+              Guilders technologies leverages modern frameworks and industry best practices to
               build robust, interactive, and user-friendly web applications from
               concept to launch.
             </p>
             <br />
             <br />
-            <button className="btn" onClick={() => navigate("/contact")}>
+            <button className="btn" style={{zIndex: '5'}} onClick={() => navigate("/contact")}>
               Get in touch
             </button>
             <div></div>
