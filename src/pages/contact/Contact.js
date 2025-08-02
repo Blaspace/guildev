@@ -4,6 +4,7 @@ import ContactForm from "./ContactForm";
 import Map from "./Map";
 import "./contact.css";
 import Footer from "../../components/Footer";
+import Helmets from "./Helmet";
 
 function Contact() {
   /*navigator.geolocation.getCurrentPosition(
@@ -24,6 +25,7 @@ function Contact() {
 
   return (
     <div>
+      <Helmets/>
       <Nav color={"#000000"} />
       <ContactForm />
       <Footer />

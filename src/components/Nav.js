@@ -8,11 +8,25 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 function Nav({ color }) {
   const navigate = useNavigate();
-  const [drop, setDrop] = useState()
+  const [drop, setDrop] = useState();
+  const [navActive, setNavActive] = useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1) {
+        setNavActive(true);
+      } else {
+        setNavActive(false);
+      }
+    };
+    handleScroll()
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="nav">
-      <div style={{ color: color }}>
+    <div className="nav" style={{ background: navActive ? "#0c0c0c" : "" }}>
+      <div style={{ color: navActive ? "#ffffff" : color }}>
         <span style={{ display: "flex", alignItems: "center", gap: "5px" }}>
           <img src={logo} alt="guildev" width={40} />
         </span>
@@ -24,16 +38,23 @@ function Nav({ color }) {
         </ul>
         <button
           style={{
-            color: color === "#000000" ? "#ffffff" : "#000000",
-            backgroundColor: color,
+            color:
+              color === "#000000"
+                ? "#ffffff"
+                : navActive
+                ? "#ffffff"
+                : "#000000",
+            backgroundColor: navActive ? "#000000" : color,
           }}
-          onClick={()=>navigate('../../contact')}
+          onClick={() => navigate("../../contact")}
         >
           Get in touch
         </button>
-        <span className="hamburger" onClick={()=>setDrop(true)}><RxHamburgerMenu size={30}/></span>
+        <span className="hamburger" onClick={() => setDrop(true)}>
+          <RxHamburgerMenu size={30} />
+        </span>
       </div>
-      <MobileDropDown drop={drop} setDrop={setDrop}/>
+      <MobileDropDown drop={drop} setDrop={setDrop} />
     </div>
   );
 }

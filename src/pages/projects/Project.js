@@ -7,6 +7,7 @@ import ProjectHeader from "./ProjectHeader";
 import CallToAction from "../../components/CallToAction";
 import AllProject from "./AllProject";
 import Footer from "../../components/Footer";
+import ContactLink from "../../components/ContactLink";
 
 function Project() {
   return (
@@ -15,6 +16,7 @@ function Project() {
       <ProjectHeader />
       <AllProject />
       <CallToAction />
+      <ContactLink/>
       <Footer/>
     </div>
   );

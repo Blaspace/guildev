@@ -24,7 +24,7 @@ function Header() {
           </p>
         </div>
         <div className="abouts-img">
-          <img src={require("../../public/poster.png")} alt="about" data-aos="fade-left"
+          <img src={require("../../public/poster.png")} alt="about" data-aos="fade-up"
             data-aos-duration="600" />
         </div>
         <img

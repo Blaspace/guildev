@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import Nav from "../../components/Nav";
 import OIP from "../../public/Ellipse 10.png";
 import { useNavigate } from "react-router-dom";
 
@@ -37,7 +36,6 @@ function Header() {
         </div>
       </div>
       <div className="header-con">
-        <Nav color={"#ffffff"} />
         <img
           src={require("../../public/Rectangle 40.png")}
           style={{

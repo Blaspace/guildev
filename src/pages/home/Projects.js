@@ -16,20 +16,15 @@ function Projects() {
         <div>
           {project.slice(0, 2).map((value, i) => {
             return (
-              <a
-                href={value.url}
-                target="_blank"
-                style={{ textDecoration: "none", color: "#000" }}
-                data-aos="fade-up"
+                <section key={i} data-aos="fade-up"
                 data-aos-duration={i + 1000}
-              >
-                <section key={i}>
+                onClick={()=>navigate(`/project/${value.name}`)}
+                >
                   <img src={value.img} alt="project" />
                   <p>
                     <b>{value.name}</b>
                   </p>
                 </section>
-              </a>
             );
           })}
         </div>
@@ -53,24 +48,17 @@ function Projects() {
 
           {project.slice(2, 4).map((value, i) => {
             return (
-<a
-                href={value.url}
-                target="_blank"
-                style={{ textDecoration: "none", color: "#000" }}
-                data-aos="fade-up"
-                data-aos-duration={i + 1000}
-              >
               <section
                 key={i}
                 data-aos="fade-up"
                 data-aos-duration={i + 1 + 1000}
+                onClick={()=>navigate(`/project/${value.name}`)}
               >
                 <img src={value.img} alt="project" />
                 <p>
                   <b>{value.name}</b>
                 </p>
               </section>
-</a>
             );
           })}
         </div>

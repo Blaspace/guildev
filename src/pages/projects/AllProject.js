@@ -2,26 +2,25 @@
 
 import React, { useContext } from "react";
 import ProjectContext from "../../context/ProjectContext";
+import { useNavigate } from "react-router-dom";
 
 function AllProject() {
   const { project } = useContext(ProjectContext);
+  const navigate = useNavigate();
   return (
     <div className="projects-con">
       <div className="projects">
         <div>
           {project.map((value, i) => {
             return (
-              <section key={i}>
-                <a
-                  href={value.url}
-                  style={{ textDecoration: "none", color: "#000" }}
-                  target="_blank"
-                >
-                  <img src={value.img} alt="project" />
-                  <p>
-                    <b>{value.name}</b>
-                  </p>
-                </a>
+              <section
+                key={i}
+                onClick={() => navigate(`/project/${value.name}`)}
+              >
+                <img src={value.img} alt="project" />
+                <p>
+                  <b>{value.name}</b>
+                </p>
               </section>
             );
           })}
