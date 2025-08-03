@@ -16,15 +16,16 @@ function Projects() {
         <div>
           {project.slice(0, 2).map((value, i) => {
             return (
-                <section key={i} data-aos="fade-up"
-                data-aos-duration={i + 1000}
-                onClick={()=>navigate(`/project/${value.name}`)}
+<a href=`/project/${value.name}` data-aos="fade-up"
+                data-aos-duration={i + 1000}>
+                <section key={i} 
                 >
                   <img src={value.img} alt="project" />
                   <p>
                     <b>{value.name}</b>
                   </p>
                 </section>
+</a>
             );
           })}
         </div>
