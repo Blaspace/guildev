@@ -17,7 +17,7 @@ function Projects() {
           {project.slice(0, 2).map((value, i) => {
             return (
 <a href={`/project/${value.name}`} data-aos="fade-up"
-                data-aos-duration={i + 1000}>
+                data-aos-duration={i + 1000} style={{color: "black" textDecoration: "none"}}>
                 <section key={i} 
                 >
                   <img src={value.img} alt="project" />
@@ -49,6 +49,8 @@ function Projects() {
 
           {project.slice(2, 4).map((value, i) => {
             return (
+<a href={`/project/${value.name}`} data-aos="fade-up"
+                data-aos-duration={i + 1000} style={{color: "black" textDecoration: "none"}}>
               <section
                 key={i}
                 data-aos="fade-up"
@@ -60,6 +62,7 @@ function Projects() {
                   <b>{value.name}</b>
                 </p>
               </section>
+</a>
             );
           })}
         </div>
