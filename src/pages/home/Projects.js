@@ -55,7 +55,6 @@ function Projects() {
                 key={i}
                 data-aos="fade-up"
                 data-aos-duration={i + 1 + 1000}
-                onClick={()=>navigate(`/project/${value.name}`)}
               >
                 <img src={value.img} alt="project" />
                 <p>
