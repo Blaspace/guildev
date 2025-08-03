@@ -14,7 +14,7 @@ function AllProject() {
           {project.map((value, i) => {
             return (
 
-<a href={`/project/${value.name}`} style={{color: "black" textDecoration: "none"}}>
+<a href={`/project/${value.name}`} style={{color: "black", textDecoration: "none"}}>
               <section
                 key={i}
               >
