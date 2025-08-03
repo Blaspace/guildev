@@ -98,22 +98,22 @@ function ContactForm() {
         <form ref={form}>
           <label>Your Full Name:</label>
           <br />
-          <input type="text" name="from_name" />
+          <input type="text" name="from_name" required/>
           <br />
           <br />
           <label>Your Phone Number:</label>
           <br />
-          <input type="tel" name="from_tel" />
+          <input type="tel" name="from_tel" required/>
           <br />
           <br />
           <label>Your Email:</label>
           <br />
-          <input type="email" name="from_email" />
+          <input type="email" name="from_email" required/>
           <br />
           <br />
           <label>Message</label>
           <br />
-          <textarea name="message" />
+          <textarea name="message" required/>
           <br />
           <br />
           <button
