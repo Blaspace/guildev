@@ -17,7 +17,7 @@ function Projects() {
           {project.slice(0, 2).map((value, i) => {
             return (
 <a href={`/project/${value.name}`} data-aos="fade-up"
-                data-aos-duration={i + 1000} style={{color: "black" textDecoration: "none"}}>
+                data-aos-duration={i + 1000} style={{color: "black", textDecoration: "none"}}>
                 <section key={i} 
                 >
                   <img src={value.img} alt="project" />
