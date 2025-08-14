@@ -15,7 +15,6 @@ function About() {
         >
           <div >
             <section
-              
             ></section>
           </div>
         </div>
