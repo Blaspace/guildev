@@ -6,7 +6,7 @@ function CallToAction() {
   return (
     <div className="calltoaction-con">
       <div className="calltoaction">
-        <h1>Enouph talk, let's get to work</h1>
+        <h1>Enough talk, let's get to work</h1>
         <a href={'/contact'} style={{textDecoration:'none', color:"black"}}><button className="btn">Get in touch</button></a>
       </div>
     </div>
