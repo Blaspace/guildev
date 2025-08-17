@@ -25,7 +25,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.youfeat.com.ng
-          username: ${{secrets.FTP_NAME }}
-          password: ${{secrets.FTP_PASSWORD }}
+          username: blaspace@guilders.com.ng
+          password: VoinUC?ESbhl.leI
           protocol: ftps
           local-dir: ./build/
