@@ -68,7 +68,6 @@ function Header() {
             <button className="btn" style={{zIndex: '5'}} onClick={() => navigate("/contact")}>
               Get in touch
             </button>
-            <div></div>
           </div>
           <div className="header-img">
             <div>

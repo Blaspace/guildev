@@ -24,7 +24,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ftp.youfeat.com.ng
+          server: ftp.youfeathomes.com.ng
           username: ${{secrets.FTP_NAME }}
           password: ${{secrets.FTP_PASSWORD }}
           protocol: ftps
